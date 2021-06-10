@@ -1,2 +1,2 @@
-# ReneMercadel-github-io
+# ReneMercadel.github.io
 My First Website
