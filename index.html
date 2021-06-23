@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta name="description" content="[My First Website]">
+    <title>Rene's First Website</title>
+      <style>
+              body {
+                  background: rgb(255, 255, 255);
+                  color: rgb(45, 45, 45);
+                  padding: 10px;
+                  font-family: arial;
+              }
+              #all-contents {
+                  max-width: 800px;
+                  margin: auto;
+              }
+
+  /* navigation menu */
+              nav {
+                  background: rgb(255, 80, 41);
+                  margin: 0 auto;
+                  margin-bottom: 20px;
+                  border-top-left-radius: 3px;
+                  border-top-right-radius: 20px;
+                  border-bottom-right-radius: 20px;                 
+                  border-bottom-left-radius: 20px;
+                  display: flex;
+                  padding: 10px;
+              }
+              nav h1 {
+                  display: flex;
+                  align-items: center;
+                  color: white;
+                  flex: 1;
+                  margin: 0;
+              }
+              nav ul {
+                  list-style-image: none;
+              }
+              nav li {
+                  display: inline-block;
+                  padding: 0 10px;
+              }
+              nav a {
+                  text-decoration: none;
+                  color: #fff;
+              }
+
+  /* main container area beneath menu */
+              
+              main {
+                  background: rgb(245, 238, 219);
+                  display: flex;
+  /* Figure out how to make the top left radius of the beige background match the radius of the profile image */              
+                  border-top-left-radius: 3px;
+                  border-top-right-radius: 160px;
+                  border-bottom-right-radius: 160px;                 
+                  border-bottom-left-radius: 160px;
+                  overflow:auto;
+              }
+              .sidebar {
+                  margin-right: 5%;
+                  padding: 10px;
+              }
+        
+  /* container for profile image*/
+        
+              .sidebar img {
+                  width: 400px;
+                  border-radius: 50%;
+                  margin-left: 10%;
+                  margin-right: auto;
+                  margin-top: 5%;
+                  width: 100%;
+
+              }
+              .content {
+                  flex: 1;
+                  padding: 15px;
+              }
+              h2, h3 {
+                  margin: 10px;
+              }
+       
+        
+</style>
+  </head>
+  
+  <body>
+    <div id="all-contents">
+      <nav>
+        <h1>Website 1.0</h1>
+        <ul>
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="portfolio.html"> Portfolio </a>
+          </li>
+        </ul>  
+      </nav>
+      
+      <main>
+        <div class="sidebar">
+          <img src="https://avatars.githubusercontent.com/u/83847441?s=400&u=e746b2d8e3601dfd30f50e0ee48099b6b288cc37&v=4">
+        </div>
+        
+        <div class="content">
+          
+          <h2>Rene Mercadel</h2>
+            
+            <p>Student at Operation Spark</p>
+            
+              <div class="interests">
+                
+                <h3>Interests</h3>
+                <ul>
+                  <li>Visual Arts</li>
+                  <li>Cooking</li>
+                  <li>Making</li>                 
+                </ul>  
+                
+              </div>                  
+        </div>
+      </main>
+    </div>
+  </body>
+
+</html>
