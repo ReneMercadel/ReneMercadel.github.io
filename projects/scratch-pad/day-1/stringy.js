@@ -58,8 +58,7 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-  return string.split(' ').join('-');
-
+  return string.split(' ').join('-').toLowerCase();
 
     // YOUR CODE ABOVE HERE //
 }
@@ -148,8 +147,15 @@ function concat(stringOne, stringTwo) {
  */
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var args = Array.from(stringOne + stringTwo);
-    return args.join();
+    var args = Array.from(arguments);
+
+//join the args array into a single string 
+    
+    var stringArgs = args.join('');
+
+//return newly joined string
+    
+    return stringArgs;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -186,13 +192,16 @@ function longest(stringOne, stringTwo) {
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-            
-            
-            if (
-        //return    v    
-                stringOne.localeCompare(stringTwo) 
-            
+// use if else statements to compare the two input strings
 
+            if (stringOne > stringTwo) {
+                return 1;
+            } else if (stringOne < stringTwo) {
+                return -1;
+            } else {
+                return 0;
+            }
+            
 
     // YOUR CODE ABOVE HERE //
 }
@@ -207,9 +216,14 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+//use if else if statements to compare the two input strings
+            if (stringOne < stringTwo) {
+                return 1;
+            } else if (stringOne > stringTwo) {
+                return -1;
+            } else {
+                return 0;
+            }
 
     // YOUR CODE ABOVE HERE //
 }

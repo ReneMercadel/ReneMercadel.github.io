@@ -21,8 +21,13 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
+
+//create a new string to contain the contents of the string as elements
+            var revString = ''
+//create a for loop to iterate in reverse over input string            
+        for (var i = input.length-1; i >= 0; i--) {
+            revString = revString + input[i];
+        } return revString;
     
     
     // YOUR CODE GOES ABOVE HERE //

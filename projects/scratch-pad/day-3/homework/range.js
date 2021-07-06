@@ -23,9 +23,23 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
+//create array variable to collect the eventual output
+            var newRange = [];
+//first need to establish direction of the loop by comparing the first parameter
+//to the second with if else? Then use (not for)/while loop to generate array elements and
+//.push them into the new array
+            if (start < end) {    
+                while (start <= end) {
+                    newRange.push(start);
+                    start++;
+                    }
+            } else if (start > end) {
+                while (start >= end) {
+                    newRange.push(start)
+                    start--;
+                    }
+            }
+    return newRange;
     
     // YOUR CODE GOES ABOVE HERE //
 }
